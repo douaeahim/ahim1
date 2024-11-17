@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Playlist</title>
+  <link rel="stylesheet" href="FICHIER.CSS/fichier.css">
+</head>
+<body>
+ 
+   
+  <header>
+   
+    <div class="header-content">
+      <img src="FICHIER.IMG/img1.jpeg" alt="Owner Image" class="owner-image">
+      <h1 class="h1">Samir Elachouri Playlist</h1>
+    </div>
+  </header>
+
+  <!-- Playlists Section -->
+  <section class="playlists">
+    <!-- Playlist 1 -->
+    <div class="playlist" id="playlist1">
+      <h2 ><b>Entity Framework avec c#</b></h2>
+      <div class="video-thumbnails">
+        <div class="video-item" data-video="MEDIA/W1.mp4">cours 4 AJOUT Modif supp</div>
+        <div class="video-item" data-video="MEDIA/W2.mp4">c1 EDM combobox</div>
+        <div class="video-item" data-video="MEDIA/W3.mp4">cours 3  rempir un datagrid</div>
+        <div class="video-item" data-video="MEDIA/W4.mp4">cours 3</div>
+        <div class="video-item" data-video="MEDIA/W5.mp4">cours 1</div>
+        <div class="video-item" data-video="MEDIA/W6.mp4">cours 2</div>
+      </div>
+    </div>
+
+    <!-- Playlist 2 -->
+    <div class="playlist" id="playlist2">
+      <h2><b>CPI1</b></h2>
+      <div class="video-thumbnails">
+        <div class="video-item" data-video="MEDIA/w7.mp4">cours 3 somme si</div>
+        <div class="video-item" data-video="MEDIA/w8.mp4">Excel nitiations cours 1</div>
+        <div class="video-item" data-video="MEDIA/w9.mp4">#word debutans</div>
+        <div class="video-item" data-video="MEDIA/W4.mp4">excel cours 2 fonction si</div>
+        <div class="video-item" data-video="MEDIA/W3.mp4">#excel cree un bon commende semi autumatique</div>
+        <div class="video-item" data-video="MEDIA/W1.mp4">cree un mini app CRM DANS EXCEL</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Player Section -->
+  <section class="video-player">
+    <video id="player" controls>
+      <source id="video-source" src="" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <script src="FICHIER.JS/fichier.js"></script>
+</body>
+</html>

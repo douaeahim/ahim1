@@ -1,0 +1,130 @@
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #8fc9c5;
+  }
+  
+
+  
+  /* Header Styling */
+  header {
+    background-color: #36746b;
+    color: white;
+    padding: 1px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+   
+  }
+  h1 {
+    font-size: 2em;
+    color: #eae4e4;
+    position: relative;
+    animation: moveDown 2s forwards; /* Animation runs once */
+    margin-top: 20px; /* Space between img and h1 */
+}
+
+/* Keyframes for the downward movement */
+@keyframes moveDown {
+    from {
+        top: -30px; /* Start position above the final place */
+        opacity: 0;
+    }
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+  
+  header .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+        }
+  
+  .owner-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+  }
+  
+  .owner-image:hover {
+    transform: scale(1.1); /* Slight zoom effect */
+  }
+  
+  /* Playlists Section */
+  .playlists {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    padding: 20px;
+  }
+  
+  .playlist {
+    width: 45%;
+    padding: 20px;
+    background-color: #36746b;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .playlist h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #e7eeed;
+    animation: moveDown 2s forwards;
+  }
+  
+  /* Video Thumbnails (hidden initially) */
+  .video-thumbnails {
+    display: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  /* Show video thumbnails when hovering over the playlist */
+  .playlist:hover .video-thumbnails {
+    display: flex;
+  }
+  
+  /* Styling for each video item (text-based) */
+  .video-item {
+    width: 30%;
+    padding: 10px;
+    background-color: #f0f0f0;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  .video-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(49, 176, 170, 0.879);
+  }
+  
+  /* Video Player Section */
+  .video-player {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  video {
+    width: 80%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
